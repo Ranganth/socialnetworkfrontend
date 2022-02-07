@@ -1,0 +1,40 @@
+
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+      <h1 style="color:aliceblue">Student page</h1>
+  <div class="d-flex">
+    
+  
+  </div>
+  </div>
+  </nav>
+  <table class="table mt-3" >
+    <thead>
+      <tr >
+        <th scope="col">StudentId</th>
+        <th scope="col">StudentName</th>
+        <th scope="col">StudentEmail</th>
+        <th scope="col">StudentUserName</th>
+        <th scope="col">StudentPassword</th>
+        <th scope="col">StudentPhone</th>
+        <th scope="col">StudentAddress</th>
+        <th scope="col">Action</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of studentData">
+        <td>{{row.studentId}}</td>
+        <td>{{row.studentName}}</td>
+        <td>{{row.studentEmail}}</td>
+        <td>{{row.studentUserName}}</td>
+        <td>{{row.studentPassword}}</td>
+        <td>{{row.studentPhone}}</td>
+        <td>{{row.studentAddress}}
+        <td>     
+  <button  (click)="onEdit(row)" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Edit</button>
+   <button (click)="deleteStudent(row)"class="btn btn-danger mx-3" >Delete</button>
+  </td>
+  </tr>
+    </tbody>
+  </table>

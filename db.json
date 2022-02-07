@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "studentId": 12,
+      "studentName": "vaishnavi",
+      "studentEmail": "vasavigpcet@gmail.com",
+      "studentUserName": "vasavibhavi",
+      "studentPassword": "vasavi2125",
+      "studentPhone": "9642506940",
+      "studentAddress": "kurnool",
+      "id": 12
+    },
+    {
+      "studentId": 0,
+      "studentName": "vasavi",
+      "studentEmail": "vasavigpcet@gmail.com",
+      "studentUserName": "vasavibhavi",
+      "studentPassword": "vasavi@2125",
+      "studentPhone": "9642506940",
+      "studentAddress": "kurnool",
+      "id": 13
+    },
+    {
+      "studentId": 0,
+      "studentName": "",
+      "studentEmail": "",
+      "studentUserName": "",
+      "studentPassword": "",
+      "studentPhone": "",
+      "studentAddress": "",
+      "id": 14
+    },
+    {
+      "studentId": 0,
+      "studentName": "vasavi",
+      "studentEmail": "vasavigpcet@gmail.com",
+      "studentUserName": "",
+      "studentPassword": "",
+      "studentPhone": "",
+      "studentAddress": "",
+      "id": 15
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

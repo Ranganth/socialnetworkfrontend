@@ -1,0 +1,51 @@
+<section class="joinnow">
+    <div class="login col-lg-4 m-auto shadow-lg">
+        <div class="text-center">
+            <h1>Student</h1>
+
+        </div>
+        <form>
+            <form [formGroup]="studentForm">
+            <div class="form-group">
+                <label for="exampleInputPassword1">StudentName</label>
+                <input type="text" formControlName="studentName"ng-model="studentname"   class="form-control" id="exampleInputPassword1">
+                <!-- <span class="text-danger" *ngIf="studentForm.controls['studentName'].dirty && studentForm.hasError('required','studentName')">studentName is required</span> -->
+                <!-- <span *ngIf="studentName.invalid">StudentName is required</span> -->
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">StudentEmail</label>
+                <input type="email" formControlName="studentEmail" class="form-control" id="exampleInputPassword1">
+                <!-- <span class="text-danger" *ngIf="studentForm.controls['studentEmail'].dirty && studentForm.hasError('required','studentEmail')">studentEmail is required</span> -->
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">StudentUserName</label>
+                <input type="text" formControlName="studentUserName" class="form-control" id="exampleInputPassword1">
+                <!-- <span class="text-danger" *ngIf="studentForm.controls['studentUserName'].dirty && studentForm.hasError('required','studentUserName')">studentUserName is required</span> -->
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">StudentPassword</label>
+                <input type="password"formControlName="studentPassword" class="form-control" id="exampleInputPassword1">
+                <!-- <span class="text-danger" *ngIf="studentForm.controls['studentPassword'].dirty && studentForm.hasError('required','studentPassword')">studentPassword is required</span> -->
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">StudentPhone</label>
+                <input type="text" formControlName="studentPhone"class="form-control" id="exampleInputPassword1">
+                <!-- <span class="text-danger" *ngIf="studentForm.controls['studentPhone'].dirty && studentForm.hasError('required','studentPhone')">studentPhone is required</span> -->
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">StudentAddress</label>
+                <input type="text"formControlName="studentAddress" class="form-control" id="exampleInputPassword1">
+                <!-- Form.controls['studentAddress'].<span class="text-danger" *ngIf="studentdirty && studentForm.hasError('required','studentaddress')">studentAddress is required</span> -->
+              </div>
+              
+              
+          <br>
+            <button type="button"  (click)="postStudentDetails()" class="btn btn-primary mb-2">Submit</button>
+            <!-- <button type="button" (click)="updateStudentDetails()" class="btn btn-primary mb-2">update</button> -->
+        </form>
+          </form>
+         
+
+    </div>
+</section>
+
